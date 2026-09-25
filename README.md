@@ -1,4 +1,4 @@
-# AI Web Research & Dossier Agent
+# Web Research & Dossier Agent
 
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110.0-009688?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
@@ -40,7 +40,7 @@ flowchart LR
 | **Runtime** | Python 3.12 | Core execution environment |
 | **API Framework** | FastAPI & Uvicorn | High-performance asynchronous REST endpoints |
 | **Data Validation** | Pydantic v2 | Strict schema validation and serialization |
-| **Domain Engine** | Dual-Mode (Local + LLM) | Production-ready AI logic with offline test capability |
+| **Execution Engine** | Dual-Mode (Local + Cloud) | Production-ready logic with offline verification |
 | **Testing** | Unittest & Pytest | Deterministic automated verification suite |
 
 ---
@@ -48,13 +48,13 @@ flowchart LR
 ## Project Structure
 
 ```text
-ai-web-research-agent/
+web-research-agent/
 ├── app/
 │   ├── __init__.py
 │   ├── api.py           # FastAPI routes and server definitions
 │   ├── config.py        # Environment variables and application settings
 │   ├── models.py        # Pydantic data schemas
-│   └── services/        # Core business and AI automation logic
+│   └── services/        # Core business automation logic
 ├── tests/
 │   ├── __init__.py
 │   └── test_web_research.py   # Automated test suite
@@ -78,8 +78,8 @@ ai-web-research-agent/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/erhatechnologiesai/ai-web-research-agent.git
-   cd ai-web-research-agent
+   git clone https://github.com/erhatechnologiesai/web-research-agent.git
+   cd web-research-agent
    ```
 
 2. **Create and activate a virtual environment:**
@@ -99,7 +99,6 @@ ai-web-research-agent/
 4. **Configure environment variables:**
    ```bash
    cp .env.example .env
-   # Edit .env with your configuration if running in live mode
    ```
 
 ---
